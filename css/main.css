@@ -53,11 +53,24 @@ table {
 
 body {
   font-size: 1em;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
-/********/
-/* Main */
-/********/
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+/**********/
+/* Header */
+/**********/
 
 header nav ul {
   display: flex;
@@ -72,6 +85,10 @@ header nav ul li:first-child {
   flex-grow: 1;
 }
 
+/********/
+/* Main */
+/********/
+
 main {
   margin: 1em;
 }
@@ -82,6 +99,10 @@ main {
 
 footer {
   bottom: 0;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	margin-bottom: 1em;
 }
 
 /***************/
