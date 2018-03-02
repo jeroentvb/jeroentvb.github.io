@@ -85,6 +85,10 @@ header nav ul li:first-child {
   flex-grow: 1;
 }
 
+nav img#logo {
+	width: 2em;
+}
+
 header nav a {
 	text-decoration: none;
 }
@@ -101,6 +105,18 @@ main {
   margin: 1em;
 }
 
+section p#moreParagraph {
+	
+}
+
+.hideParagraph {
+	display: none;
+}
+
+.showParagraph {
+	display: block;
+}
+
 /**********/
 /* Footer */
 /**********/
@@ -108,6 +124,7 @@ main {
 footer {
   bottom: 0;
 	text-align: center;
+	font-size: 0.8em;
 	width: 100%;
 	position: absolute;
 	margin-bottom: 1em;
