@@ -51,26 +51,35 @@ table {
 @font-face {
   font-family: 'raleway-semibold';
   src: url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"); }
+h1, h2, button#moreButton {
+  font-family: 'raleway-semibold', monospace; }
+
 button#moreButton {
   background-color: #2180d8; }
 
 button#moreButton:hover {
   background-color: #57aeff; }
 
+header {
+  background-color: #FFF; }
+
+header {
+  box-shadow: 0 0.125rem rgba(7, 7, 33, 0.15); }
+
 body {
   font-size: 1em;
-  font-family: Verdana, Geneva, sans-serif; }
+  font-family: 'roboto-regular', sans-serif;
+  background-color: #e6e6e9; }
 
 h1 {
-  font-size: 2em;
-  font-family: 'raleway-semibold';
-  font-weight: bold; }
+  font-size: 2em; }
 
 h2 {
   font-size: 1.5em;
-  margin: 0.5em 0;
-  font-family: 'raleway-semibold';
-  font-weight: bold; }
+  margin: 0.5em 0; }
 
 h3 {
   font-size: 1.17em; }
@@ -78,6 +87,11 @@ h3 {
 /**********/
 /* Header */
 /**********/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0; }
+
 header nav ul {
   display: flex;
   flex-direction: row; }
@@ -87,6 +101,10 @@ header nav ul li {
 
 header nav ul li:first-child {
   flex-grow: 1; }
+
+header nav ul li:nth-of-type(2) {
+  margin-top: 1.5em;
+  margin-right: 1.5em; }
 
 nav img#logo {
   width: 2em; }
@@ -101,7 +119,8 @@ header nav a:hover {
 /* Main */
 /********/
 main {
-  margin: 1em; }
+  margin: 0.5em;
+  margin-top: 5em; }
 
 article li {
   list-style-type: disc;
@@ -111,7 +130,7 @@ article ul {
   padding-left: 1.1em; }
 
 button#moreButton {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 100;
   margin-bottom: 1em;
   padding: 0.5em;
@@ -119,9 +138,15 @@ button#moreButton {
   border: none;
   transition: 0.2s;
   color: #FFF;
-  margin: 0.5em 0 -0.5em 0;
-  font-family: 'raleway-semibold';
-  font-weight: bold; }
+  margin: 0.5em 0 -0.5em 0; }
+
+#moreParagraph h2 {
+  margin-top: 2em; }
+
+#profilePicture {
+  border-radius: 50%;
+  width: 50%;
+  margin-bottom: 1em; }
 
 .hideParagraph {
   display: none; }
@@ -132,11 +157,12 @@ button#moreButton {
 img {
   width: 100%; }
 
-article a img {
-  margin-top: 2em; }
-
-span#downArrow {
+#downArrow {
   padding-top: 2em; }
+
+article {
+  padding: 1em;
+  margin-bottom: 0.5em; }
 
 /**********/
 /* Footer */
@@ -152,5 +178,13 @@ footer {
 /***************/
 /* Breakpoints */
 /***************/
+@media (min-width: 600px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto); }
+
+  #intro {
+    grid-column: 1 / 2; } }
 
 /*# sourceMappingURL=main.css.map */
