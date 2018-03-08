@@ -48,6 +48,9 @@ table {
 /******************/
 /* General styles */
 /******************/
+@font-face {
+  font-family: 'raleway-semibold';
+  src: url("../fonts/raleway/Raleway-SemiBold.ttf") format("truetype"); }
 button#moreButton {
   background-color: #2180d8; }
 
@@ -60,13 +63,13 @@ body {
 
 h1 {
   font-size: 2em;
-  font-family: monospace;
+  font-family: 'raleway-semibold';
   font-weight: bold; }
 
 h2 {
   font-size: 1.5em;
   margin: 0.5em 0;
-  font-family: monospace;
+  font-family: 'raleway-semibold';
   font-weight: bold; }
 
 h3 {
@@ -112,10 +115,12 @@ button#moreButton {
   font-weight: 100;
   margin-bottom: 1em;
   padding: 0.5em;
-  border-radius: 0.5em;
+  border-radius: 0.25em;
+  border: none;
   transition: 0.2s;
   color: #FFF;
-  font-family: monospace;
+  margin: 0.5em 0 -0.5em 0;
+  font-family: 'raleway-semibold';
   font-weight: bold; }
 
 .hideParagraph {
@@ -125,8 +130,13 @@ button#moreButton {
   display: block; }
 
 img {
-  width: 100%;
+  width: 100%; }
+
+article a img {
   margin-top: 2em; }
+
+span#downArrow {
+  padding-top: 2em; }
 
 /**********/
 /* Footer */
