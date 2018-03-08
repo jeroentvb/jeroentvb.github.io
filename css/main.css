@@ -48,6 +48,12 @@ table {
 /******************/
 /* General styles */
 /******************/
+button#moreButton {
+  background-color: #2180d8; }
+
+button#moreButton:hover {
+  background-color: #57aeff; }
+
 body {
   font-size: 1em;
   font-family: Verdana, Geneva, sans-serif; }
@@ -59,7 +65,9 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin: 0.5em 0; }
+  margin: 0.5em 0;
+  font-family: monospace;
+  font-weight: bold; }
 
 h3 {
   font-size: 1.17em; }
@@ -100,15 +108,15 @@ article ul {
   padding-left: 1.1em; }
 
 button#moreButton {
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
   margin-bottom: 1em;
-  padding: 1em;
-  background-color: blue;
+  padding: 0.5em;
   border-radius: 0.5em;
-  transition: 0.2s; }
-
-button#moreButton:hover {
-  background-color: aqua; }
+  transition: 0.2s;
+  color: #FFF;
+  font-family: monospace;
+  font-weight: bold; }
 
 .hideParagraph {
   display: none; }
@@ -117,7 +125,8 @@ button#moreButton:hover {
   display: block; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  margin-top: 2em; }
 
 /**********/
 /* Footer */
