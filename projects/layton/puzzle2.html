@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>33333!</title>
+    <link rel="stylesheet" href="css/puzzle2.css">
+</head>
+
+<body>
+    <!-- puzzle from http://layton.wikia.com/wiki/Puzzle:33333! -->
+    <audio><source src="mp3/new_puzzle.mp3" type="audio/mpeg"></audio>
+    <audio><source src="mp3/puzzle_music.mp3" type="audio/mpeg"></audio>
+    <audio><source src="mp3/succes.mp3" type="audio/mpeg"></audio>
+    <audio><source src="mp3/failed.mp3" type="audio/mpeg"></audio>
+
+    <button class="backbutton">Back to the menu</button>
+
+    <img class="puzzle" src="images/puzzle_2/puzzle_background.jpg" alt="puzzle background">
+
+    <section class="section">
+        <h1>33333!</h1>
+        <p>Use each of the numbers one through nine exactly once to fill in the blanks and complete this equation.</p>
+        <p>ooooo-oooo=33333</p>
+        <p>Put your answer in the boxes below.</p>
+        <p><input type="number" name="topanswer"><br> - <input type=number name="bottomanswer"></p>
+        <p class="none">Fill in your answer please!</p>
+        <p><input class="submit" type="submit"></p>
+    </section>
+
+    <section class="section">
+        <h1>Hints</h1>
+        <button class="hintbutton1">Hint 1</button>
+        <button class="none">Hint 2</button>
+        <button class="none">Hint 3</button>
+        <p id="hinttext">Click the button above to show the next hint.</p>
+        <img class="none" src="images/puzzle_2/answer1.png" alt="answer">
+    </section>
+    <img class="none" src="images/puzzle_2/answer2.png" alt="answer">
+    <p class="footer">Made by Jeroen van Berkum</p>
+    <script src="js/puzzle2.js"></script>
+</body>
+</html>

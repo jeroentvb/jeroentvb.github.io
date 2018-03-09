@@ -1,0 +1,77 @@
+body {
+    background: rgb(255, 213, 141);
+    background: rgba(255, 213, 141, 0.80);
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 50px;
+    width: 1000px;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    height: 550px;;
+    margin: auto;
+    margin-right: 550px;
+    padding: 1px 20px 65px 20px;
+    width: 1000px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img:nth-of-type(1) {
+    background: rgb(255, 213, 141);
+    background: rgba(255, 213, 141, 0.80);
+    margin-left: 80px;
+}
+
+img {
+    width: 384px;
+}
+
+.p1 {
+    display: inline;
+    margin-left: 225px;
+}
+
+.p2 {
+    display: inline;
+    margin-left: 415px;
+}
+
+a:link, a:hover, a:visited, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+button {
+    background: rgb(255, 213, 141);
+    background: rgba(255, 213, 141, 0.80);
+    border-radius: 10px;
+    display: block;
+    font-size: 1.2em;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 50px;
+    width: 200px;
+}
+
+.footer {
+    bottom: 0;
+    color: white;
+    left: 0;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+}

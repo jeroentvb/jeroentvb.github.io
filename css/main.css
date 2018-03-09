@@ -86,7 +86,8 @@ a:visited {
 header {
   position: fixed;
   width: 100%;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 header nav ul {
   display: flex;
@@ -172,19 +173,35 @@ img {
 .title {
   margin: 0 0.5em; }
 
-article a img {
+article img {
   transition: 0.3s; }
 
-article a img:hover {
+article img:hover {
   transform: scale(1.025); }
 
 article {
   padding: 1em;
   margin-bottom: 0.5em; }
 
+.videoContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+  margin-bottom: 1em; }
+  .videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 /**********/
 /* Footer */
 /**********/
+hr {
+  margin: 2em 4em; }
+
 footer {
   bottom: 0;
   font-size: 1em;
@@ -192,16 +209,20 @@ footer {
   position: relative;
   margin-bottom: 1em; }
   footer h3 {
-    font-weight: bolder; }
-  footer li {
-    margin-left: 2em; }
+    font-weight: bolder;
+    margin-bottom: 0.5em; }
   footer li:nth-child(3) {
-    margin-right: 2em; }
+    margin-bottom: 1em; }
   footer #info, footer ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1.5em; }
+  footer ul {
+    margin-left: 0; }
+  footer li {
+    margin: 0.2em 0; }
 
 /***************/
 /* Breakpoints */
@@ -217,11 +238,9 @@ footer {
     grid-row: 1 / 1; }
 
   section:nth-child(1) article:nth-child(odd) {
-    grid-column: 2 / 2;
-    grid-row: 2 / 2; }
+    grid-column: 2 / 2; }
   section:nth-child(1) article:nth-child(even) {
-    grid-column: 1 / 1;
-    grid-row: 2 / 2; }
+    grid-column: 1 / 1; }
 
   section:nth-child(2) article:nth-child(odd) {
     grid-column: 2 / 2; }
@@ -236,7 +255,21 @@ footer {
 
   #moreParagraph h2 {
     margin-top: 0;
-    display: none; } }
+    display: none; }
+
+  footer h3 {
+    font-weight: bolder; }
+  footer li:nth-child(3) {
+    margin-right: 2em; }
+  footer li {
+    margin-left: 1em; }
+  footer #info,
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  footer ul {
+    margin-left: 1em; } }
 @media (min-width: 800px) {
   section {
     grid-template-columns: auto repeat(2, 1fr) auto;
