@@ -172,6 +172,12 @@ img {
 .title {
   margin: 0 0.5em; }
 
+article a img {
+  transition: 0.3s; }
+
+article a img:hover {
+  transform: scale(1.025); }
+
 article {
   padding: 1em;
   margin-bottom: 0.5em; }
