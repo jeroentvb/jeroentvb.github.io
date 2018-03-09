@@ -57,17 +57,11 @@ table {
 h1, h2, button#moreButton {
   font-family: 'raleway-semibold', monospace; }
 
-button#moreButton {
+header, button#moreButton {
   background-color: #2180d8; }
 
-button#moreButton {
+header, button#moreButton {
   box-shadow: 0 0.125rem #0652dd; }
-
-header {
-  background-color: #e74c3c; }
-
-header {
-  box-shadow: 0 0.2rem #c10005; }
 
 body {
   font-size: 1em;
