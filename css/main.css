@@ -83,6 +83,9 @@ h2 {
 h3 {
   font-size: 1.17em; }
 
+a:visited {
+  color: #0000EE; }
+
 /**********/
 /* Header */
 /**********/
@@ -113,16 +116,18 @@ header nav a {
   text-decoration: none;
   color: #FFF;
   font-size: 1.2em; }
-
-header nav a:hover {
-  text-decoration: underline; }
+header nav a:hover, header nav a:active {
+  text-decoration: underline;
+  color: #FFF; }
+header nav a:visited {
+  color: #FFF; }
 
 /********/
 /* Main */
 /********/
 main {
   margin: 0.5em;
-  margin-top: 5em; }
+  margin-top: 6em; }
 
 article li {
   list-style-type: disc;
@@ -154,6 +159,12 @@ button#moreButton:hover {
   margin: auto;
   margin-bottom: 1em; }
 
+#moreParagraph a {
+  text-decoration: none; }
+
+#moreParagraph a:hover, #moreParagraph a:active {
+  text-decoration: underline; }
+
 .hideParagraph {
   display: none; }
 
@@ -176,11 +187,21 @@ article {
 /**********/
 footer {
   bottom: 0;
-  text-align: center;
-  font-size: 0.8em;
+  font-size: 1em;
   width: 100%;
   position: relative;
   margin-bottom: 1em; }
+  footer h3 {
+    font-weight: bolder; }
+  footer li {
+    margin-left: 2em; }
+  footer li:nth-child(3) {
+    margin-right: 2em; }
+  footer #info, footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
 
 /***************/
 /* Breakpoints */
@@ -235,9 +256,6 @@ footer {
   section:nth-child(2) article:nth-child(even) {
     grid-column: 2 / 2; }
 
-  main {
-    margin-top: 6em; }
-
   #profilePicture {
     width: 10em; }
 
@@ -271,10 +289,16 @@ footer {
     margin-top: 7em; } }
 @media (min-width: 1500px) {
   section {
-    grid-template-columns: 15% repeat(2, 1fr) 15%; }
+    grid-template-columns: 12% repeat(2, 1fr) 12%; }
 
   section:nth-of-type(2) {
-    grid-template-columns: 15% repeat(3, 1fr) 15%;
-    grid-column-gap: 4em; } }
+    grid-template-columns: 12% repeat(3, 1fr) 12%;
+    grid-column-gap: 4em; }
+
+  header nav ul li:first-child {
+    margin-left: 8.6em; }
+
+  header nav ul li:nth-of-type(2) {
+    margin-right: 8.6em; } }
 
 /*# sourceMappingURL=main.css.map */
