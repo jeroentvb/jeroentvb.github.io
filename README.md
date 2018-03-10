@@ -1,2 +1,5 @@
 # Jeroen's Portfolio
-This is a repository for my portfolio website. It is currently being updated.
+This is a repository for my portfolio website.
+
+You can find it [here](http://jeroenvanberkum.nl)
+
