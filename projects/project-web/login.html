@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/svg" href="images/book.svg">
+  <title>Log in</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/nslogo.svg" alt="NS logo" class="logo"><span class="menu_text">NS Verhalen</span></a></li>
+        <li><a href="stories.html"><img src="images/book3.png" alt="verhalen" id="book_icon"><span class="menu_text">Leeslijst</span></a></li>
+        <li><a href="login.html"><img src="images/account.png" alt="mijn account" id="account_icon"><span class="menu_text">Mijn account</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1 id="alt_kop">Log in bij uw NS verhalen account</h1>
+      <form action="index.html" id="login_form">
+        <h2>Log in</h2>
+        <fieldset>
+          <legend>Log in</legend>
+          <label for="email">E-mailadres</label>
+          <input required type="email" id="email" placeholder="gris@welwerf.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Gebruik een compleet e-mail adres.">
+
+          <label for="password">Wachtwoord</label>
+          <input required type="password" id="password">
+
+          <input type="submit" id="submit" class="button_primary_action">
+        </fieldset>
+        <fieldset>
+          <legend>Wachtwoord vergeten</legend>
+          <a href="#">Wachtwoord vergeten</a>
+        </fieldset>
+      </form>
+
+      <article class="create_account">
+        <h2>Nog geen account?</h2>
+        <a href="register.html">> Maak een account aan</a>
+        <ul>
+          <li>Overal toegang tot uw favoriete verhalen</li>
+          <li>Krijg gepersonaliseerde verhalen te zien</li>
+          <li>Geef uw mening zodat anderen leukere verhalen te zien krijgen</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

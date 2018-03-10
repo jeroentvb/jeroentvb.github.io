@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/svg" href="images/book.svg">
+  <title>Log in</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/nslogo.svg" alt="NS logo" class="logo"><span class="menu_text">NS Verhalen</span></a></li>
+        <li><a href="stories.html"><img src="images/book3.png" alt="verhalen" id="book_icon"><span class="menu_text">Leeslijst</span></a></li>
+        <li><a href="login.html"><img src="images/account.png" alt="mijn account" id="account_icon"><span class="menu_text">Mijn account</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+    <h1 id="alt_kop">Maak een NS verhalen account</h1>
+    <form action="index.html" id="register_form">
+      <h2>Registreer</h2>
+      <fieldset>
+        <legend>E-mailadres</legend>
+        <label for="email">E-mailadres</label>
+        <input required type="email" id="email" placeholder="gris@welwerf.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Gebruik een compleet e-mail adres.">
+
+        <label for="confirm_email">Bevestige e-mailadres</label>
+        <input required type="email" id="confirm_email" placeholder="gris@welwerf.com">
+      </fieldset>
+
+      <fieldset>
+        <legend>Wachtwoord</legend>
+        <label for="password">Wachtwoord</label>
+        <input required type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Het wachtwoord moet ten minste 8 tekens lang zijn, een hoofdletter, kleine letter en 1 cijfer bevatten.">
+        <p id="password_hint">Het wachtwoord moet ten minste 8 tekens lang zijn, een hoofdletter, kleine letter en 1 cijfer bevatten.</p>
+
+        <label for="confirm_password">Bevestig wachtwoord</label>
+        <input required type="password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Het wachtwoord moet ten minste 8 tekens lang zijn, een hoofdletter, kleine letter en 1 cijfer bevatten.">
+      </fieldset>
+
+      <fieldset>
+        <legend>Persoonlijke voorkeuren</legend>
+        <ul>
+          <li>
+            <input type="checkbox" id="fictie">
+            <label for="fictie">Fictie</label>
+          </li>
+          <li>
+            <input type="checkbox" id="non-fictie">
+            <label for="non-fictie">Non-fictie</label>
+          </li>
+          <li>
+            <input type="checkbox" id="adventure">
+            <label for="adventure">Avontuur</label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="politics">
+            <label for="politics">Politiek</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Akkoord met gebruikersvoorwaarden</legend>
+        <input type="checkbox" id="accept_terms_conditions" required checked>
+        <label for="accept_terms_conditions">Ik ga akkoord met de gebruikersvoorwaarden</label>
+
+        <label for="submit"></label>
+        <input type="submit" id="submit" class="button_primary_action">
+      </fieldset>
+    </form>
+  </section>
+
+  </main>
+</body>
+
+</html>
