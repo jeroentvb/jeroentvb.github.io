@@ -179,6 +179,9 @@ article img {
 article img:hover {
   transform: scale(1.025); }
 
+article img#profilePicture:hover {
+  transform: scale(1); }
+
 article {
   padding: 1em;
   margin-bottom: 0.5em; }
