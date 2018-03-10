@@ -1,3 +1,7 @@
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+
 var moreButton = document.getElementById('moreButton');
 var moreParagraph = document.getElementById('moreParagraph');
 
