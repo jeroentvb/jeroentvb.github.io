@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact - Portfolio Jeroen van Berkum</title>
+  <meta name="description" content="Jeroen van Berkum Portfolio">
+  <meta name="keywords" content="Jeroen,Berkum,Portfolio">
+  <title>Home - Jeroen van Berkum Portfolio</title>
+  <link rel="shortcut icon" href="images/logo.ico">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -22,7 +25,26 @@
   </header>
 
   <main>
+    <section>
+      <h1 class="title">Contact</h1>
+      <article>
+          <p>Je kunt me vinden op:</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/jeroen-van-berkum-678877158/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/jeroentvb" target="_blank">Github</a></li>
+          </ul>
 
+          <form action="mailto:jeroenvb@quicknet.nl" method="post">
+            <p>Of stuur me een e-mail.</p>
+            <label for="email">E-mail adres</label>
+            <input type="email" name="email" id="email" placeholder="john@smith.com" required>
+            <label for="message">Bericht</label>
+            <textarea name="message" rows="8" cols="80" id="message" placeholder="Typ uw bericht hier.." required></textarea>
+            <label for="submit"></label>
+            <input type="submit">
+          </form>
+      </article>
+    </section>
   </main>
 
   <hr>
