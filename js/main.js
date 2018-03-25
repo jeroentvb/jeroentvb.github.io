@@ -1,7 +1,9 @@
+// Prevent zooming
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
 });
 
+// Button to show more info on mobile devices
 var moreButton = document.getElementById('moreButton');
 var moreParagraph = document.getElementById('moreParagraph');
 
