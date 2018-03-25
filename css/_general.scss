@@ -1,0 +1,80 @@
+/******************/
+/* General styles */
+/******************/
+
+@font-face {
+  font-family: 'raleway-semibold';
+  src: url('../fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+%titleFont {
+  font-family: 'raleway-semibold', monospace;
+  color: #263238;
+}
+
+%primary-color {
+	background-color: #2180d8;
+}
+
+$primary-color: #2180d8;
+
+%primary-shadow {
+  box-shadow: 0 0.1rem 0.5em #0652dd;
+}
+
+$primary-shadow: #0652dd;
+
+%secondary-color {
+  background-color: #e74c3c;
+}
+
+$secondary-color: #e74c3c;
+
+%secondary-shadow {
+  box-shadow: 0 0.2rem #c10005;
+}
+
+%white {
+  background-color: #FFF;
+}
+
+%grey-shadow {
+  box-shadow: 0 0.125rem rgba(7, 7, 33, .15);
+}
+
+$light-grey: #bdc3c7;
+
+body {
+  font-size: 1em;
+	font-family: 'roboto-regular', sans-serif;
+  // background-color: #e6e6e9;
+}
+
+h1 {
+	font-size: 2em;
+  @extend %titleFont;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+  @extend %titleFont;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+a:visited {
+  color: #0000EE;
+}
+
+p {
+  // line-height: 1.618em; golden ratio
+  line-height: 1.5em;
+}

@@ -1,0 +1,146 @@
+/********/
+/* Main */
+/********/
+
+main {
+  margin: 0.5em;
+  margin-top: 5em;
+}
+
+section#introText {
+  background: #56CCF2;
+background: -webkit-linear-gradient(to top, #0652dd, #2180d8);
+background: linear-gradient(to top, #0652dd, #2180d8);
+  color: #EEEEEE;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 98%);
+  padding: 1.5em 0.5em 1em 0.5em;
+  margin: -1.5em -0.5em 1em -0.5em;
+
+  a {
+    color: #BDBDBD;
+  }
+
+  h1 {
+    color: #EEEEEE;
+  }
+}
+
+article li {
+	list-style-type: disc;
+	margin: 0.5em 0;
+}
+
+article ul {
+	padding-left: 1.1em;
+}
+
+button#moreButton {
+	font-size: 1.2em;
+  font-weight: 100;
+	padding: 0.5em;
+	border-radius: 0.1em;
+  border: none;
+	transition: 0.2s;
+  color: #FFF;
+  margin-top: 1em;
+  @extend %titleFont;
+  @extend %primary-color;
+  @extend %primary-shadow;
+
+}
+
+button#moreButton:hover {
+	background-color: $primary-shadow;
+}
+
+#moreParagraph h2 {
+  // margin-top: 0.5em;
+  display: none;
+}
+
+#profilePicture {
+  display: block;
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+#moreParagraph a {
+  text-decoration: none;
+}
+
+#moreParagraph {
+  a:hover, a:active {
+    text-decoration: underline;
+  }
+}
+
+.hideParagraph {
+	display: none;
+}
+
+.showParagraph {
+	display: block;
+}
+
+img {
+	width: 100%;
+  border-radius: 0.25em;
+}
+
+.title {
+  margin: 0 0.5em;
+}
+
+article img {
+  transition: 0.3s;
+}
+
+article img:hover {
+  transform: scale(1.025);
+}
+
+article img#profilePicture:hover {
+  transform: scale(1);
+}
+
+article {
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.videoContainer {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-bottom: 1em;
+
+  iframe {
+    position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+  }
+}
+
+form {
+  margin-top: 1.5em;
+
+  label {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+  }
+
+  input[type=email] {
+    font-size: 1em;
+    width: 75%;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 1em;
+  }
+}
