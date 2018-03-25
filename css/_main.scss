@@ -18,6 +18,11 @@ background: linear-gradient(to top, #0652dd, #2180d8);
 
   a {
     color: #BDBDBD;
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    text-decoration: underline;
   }
 
   h1 {
