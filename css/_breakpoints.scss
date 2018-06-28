@@ -220,3 +220,27 @@ $ten: 12%;
   }
   @include nav-margin($ten + 4.5);
 }
+$seventeen: 17.5%;
+@media (min-width: 2200px) {
+  section {
+    grid-template-columns: $seventeen repeat(2, 1fr) $seventeen;
+    // grid-template-rows: repeat(4, auto);
+    // grid-column-gap: 2em;
+  }
+
+  section:nth-child(3),
+  section:nth-of-type(2) {
+    grid-template-columns: $seventeen repeat(3, 1fr) $seventeen;
+    // grid-template-rows: auto;
+    grid-column-gap: 4em;
+  }
+
+  header nav ul li:first-child {
+    margin-left: 8.6em;
+  }
+
+  header nav ul li:last-child {
+    margin-right: 8.6em;
+  }
+  @include nav-margin($seventeen + 4);
+}
