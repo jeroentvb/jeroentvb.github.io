@@ -53,6 +53,8 @@ body {
   font-size: 1em;
 	font-family: 'roboto-regular', sans-serif;
   // background-color: #e6e6e9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
