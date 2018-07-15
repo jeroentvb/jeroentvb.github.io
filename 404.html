@@ -8,17 +8,17 @@
   <meta name="keywords" content="Jeroen,Berkum,Portfolio">
   <title>Home - Jeroen van Berkum Portfolio</title>
   <link rel="shortcut icon" href="images/logo.ico">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="../css/main.css" rel="stylesheet" type="text/css" id="css">
 </head>
 
 <body>
   <header>
     <nav>
       <ul>
-        <li><a href="index.html"><img src="images/logo-white.png" alt="Logo" id="logo"></a></li>
+        <li><a href="index.html"><img src="../images/logo-white.png" alt="Logo" id="logo"></a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="en/404.html">EN</a></li>
+        <li><a href="en/404.html" class="change-lang">EN</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,7 @@
     <section>
       <h1 class="title">Whoops! Je vroeg om een niet bestaande pagina..</h1>
       <article>
-        <p><a href="index.html">Laten we terug gaan naar het begin.</a></p>
+        <p><a href="index.html" class="back-link">Laten we terug gaan naar het begin.</a></p>
       </article>
     </section>
   </main>
@@ -35,7 +35,7 @@
   <footer style="position: absolute;">
     <hr>
     <div id="info">
-    <h3>Vind me op</h3>
+    <h3 class="find-me">Vind me op</h3>
     <ul>
       <li><a href="https://www.linkedin.com/in/jeroen-van-berkum-678877158/" target="_blank">LinkedIn</a></li>
       <li><a href="https://github.com/jeroentvb" target="_blank">Github</a></li>
@@ -43,5 +43,14 @@
     <p>&copy; Jeroen van Berkum, 2018</p>
     </div>
   </footer>
+  <script type="text/javascript">
+    if (window.location.pathname.substring(0, 4) == '/en/') {
+      document.getElementsByClassName('title')[0].innerHTML = 'Whoops! You requested a non-existent page..'
+      document.getElementsByClassName('back-link')[0].innerHTML = 'Lets go back to the start, shall we?'
+      document.getElementsByClassName('find-me')[0].innerHTML = 'Find me on'
+      document.getElementsByClassName('change-lang')[0].innerHTML = 'NL'
+      document.getElementsByClassName('change-lang')[0].setAttribute('href', '../404.html')
+    }
+  </script>
 </body>
 </html>
