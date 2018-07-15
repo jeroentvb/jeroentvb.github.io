@@ -5,7 +5,7 @@ if (window.location.pathname == '/' || window.location.pathname == '/index.html'
   var moreParagraph = document.getElementById('moreParagraph')
   var reqPath = window.location.pathname
   // Translations
-  var dutch = ['Minder over mij ˆ', 'Meer over mij ˅']
+  var dutch = ['Minder over mij ^', 'Meer over mij ˅']
   var english = ['Less about me ^', 'More about me ˅']
   // function to actually hide or show the paragraph and change button text
   function hideShowParagraph(show, hide, text) {
