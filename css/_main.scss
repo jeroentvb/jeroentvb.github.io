@@ -51,11 +51,14 @@ button#moreButton {
   @extend %titleFont;
   @extend %primary-color;
   @extend %primary-shadow;
-
 }
 
 button#moreButton:hover {
 	background-color: $primary-shadow;
+}
+
+button#moreButton:focus {
+  outline: none;
 }
 
 #moreParagraph h2 {
