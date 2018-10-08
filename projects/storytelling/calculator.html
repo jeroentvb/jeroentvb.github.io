@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Boete route</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="calc">
+    <h1>Boete route</h1>
+  </header>
+
+  <main id="calculator">
+    <aside>
+      <h3 class="margin-bottom">Selecteer route</h3>
+      <div class="from-to">
+        <p>Van:</p>
+        <select name="from" id="from-dest">
+          <option value="" selected disabled>Selecteer</option>
+          <option value="amsterdam">Amsterdam</option>
+          <option value="gent">Gent</option>
+          <option value="luxemburg">Luxemburg</option>
+          <option value="keulen">Keulen</option>
+        </select>
+      </div>
+
+      <div class="from-to margin-bottom">
+        <p>Naar:</p>
+        <select name="to" id="to-dest">
+          <option value="" selected disabled>Selecteer</option>
+          <option value="eindhoven">Eindhoven</option>
+          <option value="luik">Luik</option>
+          <option value="vianden">Vianden</option>
+          <option value="frankfurt">Frankfurt</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Deze overtredingen bega ik tijdens mijn rit</p>
+        <div class="checkbox">
+          <input id="speeding-road" type="checkbox">
+          <label for="speeding-road">25 km/h te hard binnen de bebouwde kom</label>
+        </div>
+
+        <div class="checkbox">
+          <input id="speeding" type="checkbox">
+          <label for="speeding">25 km/h te hard op de snelweg</label>
+        </div>
+
+        <div class="checkbox">
+          <input id="red-light" type="checkbox">
+          <label for="red-light">Door rood rijden</label>
+        </div>
+
+        <div class="checkbox">
+          <input id="using-phone" type="checkbox">
+          <label for="using-phone">Gebruik van mobiele telefoon</label>
+        </div>
+
+        <div class="checkbox">
+          <input id="alcohol" type="checkbox">
+          <label for="alcohol">Rijden met 0,8‰ tot 1,0‰</label>
+        </div>
+      </div>
+
+      <div id="notes"></div>
+
+      <section id="your-fines">
+        <h3>Door u te betalen: <br><span id="price">&euro; 0,-</span></h3>
+        <div id="pay-before" class="hidden">
+          <p>Betaal voor</p>
+          <h4>8 Oktober</h4>
+
+          <p>op rekeningnummer</p>
+          <h4>NL56 INGB 1234567890</h4>
+
+          <p>op naam van</p>
+          <h4>CJIB</h4>
+
+          <p>met betalingskenmerk</p>
+          <h4>0000 0000 0000 0000</h4>
+        </div>
+      </section>
+
+      <div id="other-fines" class="hidden">
+        <h4>In een ander land zou het je de volgende bedragen kosten:</h4>
+        <p id="other-country-fines"></p>
+      </div>
+    </aside>
+
+    <section>
+      <img id="map" src="img/default.jpg" alt="road-map">
+
+      <div id="fine-amount" class="hidden">
+        <img src="img/een-boete.png" alt="boetes" id="fine-envelope">
+      </div>
+    </section>
+  </main>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
