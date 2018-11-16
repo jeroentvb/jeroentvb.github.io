@@ -1,3 +1,4 @@
 .sass-cache
 *.css.map
 *.psd
+node_modules/

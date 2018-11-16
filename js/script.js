@@ -1,10 +1,17 @@
 'use strict'
+// Button to show more info on mobile devices
+const moreButton = document.getElementById('moreButton')
+const moreParagraph = document.getElementById('moreParagraph')
+const reqPath = window.location.pathname
+// Translations
+const dutch = ['Minder over mij ^', 'Meer over mij ˅']
+const english = ['Less about me ^', 'More about me ˅']
 
 // function to actually hide or show the paragraph and change button text
 function hideShowParagraph (show, hide, text) {
   moreParagraph.classList.add(show)
   moreParagraph.classList.remove(hide)
-  moreButton.innerHTML = text
+  moreButton.textContent = text
 }
 // Check wether to hide or show the paragraph
 function showOrHide (translation) {
@@ -22,14 +29,8 @@ function showMoreLess () {
     showOrHide(dutch)
   }
 }
-if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '/en/index.html') {
-  // Button to show more info on mobile devices
-  var moreButton = document.getElementById('moreButton')
-  var moreParagraph = document.getElementById('moreParagraph')
-  var reqPath = window.location.pathname
-  // Translations
-  var dutch = ['Minder over mij ^', 'Meer over mij ˅']
-  var english = ['Less about me ^', 'More about me ˅']
 
+// Only execute the js if the user is on the homepage
+if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname === '/en/index.html') {
   moreButton.addEventListener('click', showMoreLess)
 }
