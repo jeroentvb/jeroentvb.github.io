@@ -17,11 +17,6 @@ footer {
     margin-bottom: 0.5em;
   }
 
-   li:nth-child(2) {
-     // margin-right: 2em;
-     margin-bottom: 1em;
-   }
-
   #info, ul {
     display: flex;
     flex-direction: column;
@@ -36,5 +31,8 @@ footer {
 
   li {
     margin: 0.2em 0;
+    &:nth-child(2) {
+      margin-bottom: 1em;
+    }
   }
 }

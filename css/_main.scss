@@ -49,20 +49,21 @@ button#moreButton {
   color: #FFF;
   margin-top: 1em;
   @extend %titleFont;
-  @extend %primary-color;
-  @extend %primary-shadow;
+  background-color: $primary-color;
+  box-shadow: $primary-shadow;
 }
 
-button#moreButton:hover {
-	background-color: $primary-shadow;
-}
-
-button#moreButton:focus {
-  outline: none;
+button#moreButton {
+  &:hover {
+  	background-color: $primary-shadow;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 #moreParagraph h2 {
-  // margin-top: 0.5em;
   display: none;
 }
 
@@ -87,7 +88,7 @@ section#proudestWork {
 }
 
 #proudestWorkPicture {
-
+  border: 1px solid $primary-color;
 }
 
 #moreParagraph a {
@@ -117,21 +118,19 @@ img {
   margin: 0 0.5em;
 }
 
-article img {
-  transition: 0.3s;
-}
-
-article img:hover {
-  transform: scale(1.025);
-}
-
-article img#profilePicture:hover {
-  transform: scale(1);
-}
-
 article {
   padding: 1em;
   margin-bottom: 0.5em;
+
+  img {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.025);
+    }
+    &#profilePicture:hover {
+      transform: scale(1);
+    }
+  }
 }
 
 .videoContainer {

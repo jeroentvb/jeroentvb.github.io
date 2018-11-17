@@ -17,42 +17,17 @@
   color: #263238;
 }
 
-%primary-color {
-	background-color: #2180d8;
-}
-
 $primary-color: #2180d8;
-
-%primary-shadow {
-  box-shadow: 0 0.1rem 0.5em #0652dd;
-}
-
-$primary-shadow: #0652dd;
-
-%secondary-color {
-  background-color: #e74c3c;
-}
-
 $secondary-color: #e74c3c;
-
-%secondary-shadow {
-  box-shadow: 0 0.2rem #c10005;
-}
-
-%white {
-  background-color: #FFF;
-}
-
-%grey-shadow {
-  box-shadow: 0 0.125rem rgba(7, 7, 33, .15);
-}
-
 $light-grey: #bdc3c7;
+
+$primary-shadow: 0 0.1rem 0.5em #0652dd;
+$secondary-shadow: 0 0.2rem #c10005;
+$grey-shadow: 0 0.125rem rgba(7, 7, 33, .15);
 
 body {
   font-size: 1em;
 	font-family: 'roboto-regular', sans-serif;
-  // background-color: #e6e6e9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -77,6 +52,5 @@ a:visited {
 }
 
 p {
-  // line-height: 1.618em; golden ratio
   line-height: 1.5em;
 }

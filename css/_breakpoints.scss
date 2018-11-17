@@ -2,19 +2,24 @@
 /* Breakpoints */
 /***************/
 @mixin nav-margin($margin) {
-  header nav ul li:first-child {
-    margin-left: $margin;
-  }
-
-  header nav ul li:last-child {
-    margin-right: $margin;
+  header nav ul li {
+    &:first-child {
+      margin-left: $margin;
+    }
+    &:last-child {
+      margin-right: $margin;
+    }
   }
 }
+
 @media (min-width: 600px) {
   section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
+    &#introText {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    }
   }
 
   .title {
@@ -22,30 +27,26 @@
     grid-row: 1 / 1;
   }
 
-  section#introText {
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
-  }
-
   section:nth-child(1) {
-    article:nth-child(odd) {
-      grid-column: 2 / 2;
-      // grid-row: 2 / 2;
-    }
-
-    article:nth-child(even) {
-      grid-column: 1 / 1;
-      // grid-row: 2 / 2;
+    article {
+      &:nth-child(odd) {
+        grid-column: 2 / 2;
+      }
+      &:nth-child(even) {
+        grid-column: 1 / 1;
+      }
     }
   }
 
   section:nth-child(2),
   section:nth-child(3) {
-    article:nth-child(odd) {
-      grid-column: 2 / 2;
-    }
-
-    article:nth-child(even) {
-      grid-column: 1 / 1;
+    article {
+      &:nth-child(odd) {
+        grid-column: 2 / 2;
+      }
+      &:nth-child(even) {
+        grid-column: 1 / 1;
+      }
     }
   }
 
@@ -61,14 +62,14 @@
     margin-top: 0;
     display: none;
   }
+
   // footer
   footer {
-    li:nth-child(2) {
-      margin-right: 2em;
-    }
-
     li {
       margin-left: 1em;
+      &:nth-child(2) {
+        margin-right: 2em;
+      }
     }
 
     #info,
@@ -86,7 +87,6 @@
 @media (min-width: 800px) {
   section {
     grid-template-columns: auto repeat(2, 1fr) auto;
-    // grid-template-rows: repeat(4, auto);
     grid-column-gap: 2em;
   }
 
@@ -96,28 +96,26 @@
   }
 
   section:nth-child(1) {
-    article:nth-child(odd) {
-      grid-column: 3 / 3;
-      // grid-row: 2 / 2;
-    }
-
-    article:nth-child(even) {
-      grid-column: 2 / 2;
-      // grid-row: 2 / 2;
+    article {
+      &:nth-child(odd) {
+        grid-column: 3 / 3;
+      }
+      &:nth-child(even) {
+        grid-column: 2 / 2;
+      }
     }
   }
 
   section:nth-child(2),
   section:nth-child(3),
   section:nth-child(4) {
-    article:nth-child(odd) {
-      grid-column: 3 / 3;
-      // background-color: green;
-    }
-
-    article:nth-child(even) {
-      grid-column: 2 / 2;
-      // background-color: blue;
+    article {
+      &:nth-child(odd) {
+        grid-column: 3 / 3;
+      }
+      &:nth-child(even) {
+        grid-column: 2 / 2;
+      }
     }
   }
 
@@ -125,13 +123,6 @@
     width: 10em;
   }
   @include nav-margin(3.6em);
-  // header nav ul li:first-child {
-  //   margin-left: 3.6em;
-  // }
-  //
-  // header nav ul li:nth-of-type(2) {
-  //   margin-right: 3.6em;
-  // }
   hr {
     margin: 2em 4em;
   }
@@ -203,51 +194,51 @@
     margin-top: 6em;
   }
 }
+
 $ten: 12%;
 @media (min-width: 1500px) {
   section {
     grid-template-columns: $ten repeat(2, 1fr) $ten;
-    // grid-template-rows: repeat(4, auto);
-    // grid-column-gap: 2em;
   }
 
   section:nth-child(3),
   section:nth-of-type(4) {
     grid-template-columns: $ten repeat(3, 1fr) $ten;
-    // grid-template-rows: auto;
     grid-column-gap: 4em;
   }
 
-  header nav ul li:first-child {
-    margin-left: 8.6em;
+  header nav ul li {
+    &:first-child {
+      margin-left: 8.6em;
+    }
+    &:last-child {
+      margin-right: 8.6em;
+    }
   }
 
-  header nav ul li:last-child {
-    margin-right: 8.6em;
-  }
   @include nav-margin($ten + 4.5);
 }
+
 $seventeen: 17.5%;
 @media (min-width: 2200px) {
   section {
     grid-template-columns: $seventeen repeat(2, 1fr) $seventeen;
-    // grid-template-rows: repeat(4, auto);
-    // grid-column-gap: 2em;
   }
 
   section:nth-child(3),
   section:nth-of-type(4) {
     grid-template-columns: $seventeen repeat(3, 1fr) $seventeen;
-    // grid-template-rows: auto;
     grid-column-gap: 4em;
   }
 
-  header nav ul li:first-child {
-    margin-left: 8.6em;
+  header nav ul li {
+    &:first-child {
+      margin-left: 8.6em;
+    }
+    &:last-child {
+      margin-right: 8.6em;
+    }
   }
 
-  header nav ul li:last-child {
-    margin-right: 8.6em;
-  }
   @include nav-margin($seventeen + 4);
 }
