@@ -1,0 +1,65 @@
+body {
+  background-color: $background;
+  color: $color-text;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.125rem;
+  font-family: 'Open Sans';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.575rem;
+  margin: 1rem 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-platforms {
+  margin-top: 1rem;
+
+  .icon {
+    margin-right: 1rem;
+  }
+}
+
+.icon {
+  width: 2.5rem;
+}
+
+.monospace {
+  font-family: monospace;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 30rem) {
+  body {
+    padding: 2rem;
+  }
+}

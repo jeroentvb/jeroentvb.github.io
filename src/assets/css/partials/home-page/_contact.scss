@@ -1,0 +1,32 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $breakpoint-small) {
+  #contact {
+    display: grid;
+    grid-template-columns: $breakpoint-small-grid;
+    grid-column-gap: $breakpoint-small-grid-gap;
+
+    .content {
+      grid-column: 1 / 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  #contact {
+    padding: $breakpoint-medium-padding;
+  }
+}

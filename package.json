@@ -1,27 +1,31 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Jeroentvb's portfolio website",
-  "main": "",
+  "name": "modularhtml",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "browserify -d -e js/script.js -t babelify | uglifyjs -m > js/script.min.js"
+    "build": "node scripts/build.js",
+    "newpage": "node scripts/newpage.js",
+    "start": "node scripts/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeroentvb/portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "jeroentvb",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jeroentvb/portfolio/issues"
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "postcss": "^7.0.14",
+    "terser": "^3.17.0"
   },
-  "homepage": "https://github.com/jeroentvb/portfolio#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "babelify": "^10.0.0",
-    "browserify": "^16.2.3"
+    "nodemon": "^1.18.9"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/*",
+      "public/*"
+    ]
   }
 }
