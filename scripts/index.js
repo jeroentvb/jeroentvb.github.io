@@ -1,5 +1,6 @@
 const app = require('express')
 const fs = require('fs')
+const work = require('../src/work.json')
 
 app()
   .set('view engine', 'ejs')
@@ -14,7 +15,8 @@ app()
 
 function index (req, res) {
   res.render('index', {
-    pagename: 'Home'
+    pagename: 'Home',
+    work: work
   })
 }
 

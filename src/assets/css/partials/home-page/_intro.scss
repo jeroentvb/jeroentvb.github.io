@@ -16,6 +16,10 @@
   color: #9B9B9B;
 }
 
+.content p {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: $breakpoint-small) {
   #intro {
     padding-top: 4rem;
@@ -41,5 +45,11 @@
 
   .content {
     grid-column: 1 / 2;
+  }
+}
+
+@media (min-width: $breakpoint-large) {
+  #intro {
+    padding: $breakpoint-large-padding;
   }
 }

@@ -30,3 +30,9 @@
     padding: $breakpoint-medium-padding;
   }
 }
+
+@media (min-width: $breakpoint-large) {
+  #contact {
+    padding: $breakpoint-large-padding;
+  }
+}

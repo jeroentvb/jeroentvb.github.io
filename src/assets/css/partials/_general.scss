@@ -51,11 +51,29 @@ p {
 
 .icon {
   width: 2.5rem;
+  g g path {
+    transition: 0.2s;
+  }
+  path {
+    transition: 0.2s;
+  }
+  &:hover {
+    g g path {
+      fill: $color-secondary;
+    }
+    path {
+      fill: $color-secondary;
+    }
+  }
 }
 
 .monospace {
   font-family: monospace;
   font-size: 1.125rem;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (min-width: 30rem) {

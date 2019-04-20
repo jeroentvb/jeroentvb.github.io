@@ -4,6 +4,7 @@ const ejs = require('ejs')
 const Terser = require('terser')
 const postcss = require('postcss')
 const cssnano = require('cssnano')
+const work = require('../src/work.json')
 
 function createDistFolder () {
   if (!fs.existsSync('./dist')) {
@@ -40,7 +41,8 @@ function compileTemplates () {
 
         const name = file === 'index.ejs' ? 'Home' : file.charAt(0).toUpperCase() + file.substr(1).replace('.ejs', '')
         const html = template({
-          pagename: name
+          pagename: name,
+          work: work
         })
 
         fs.writeFile(`./dist/${file.replace('.ejs', '')}.html`, html, err => {
