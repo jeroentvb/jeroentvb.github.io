@@ -9,6 +9,34 @@
   }
 }
 
+.contact-list {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .link {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.2s;
+        border-bottom: 2px solid $color-secondary;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+
+      a svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
 @media (min-width: $breakpoint-small) {
   #contact {
     display: grid;

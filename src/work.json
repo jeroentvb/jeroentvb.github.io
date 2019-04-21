@@ -1,87 +1,73 @@
 [
   {
-    "title": "test",
+    "title": "Wind-forecast",
     "image": {
-      "default": "assets/img/wind-scrape-package.jpg",
-      "webp": "",
-      "alt": "Test"
+      "default": "assets/img/wind-forecast.jpg",
+      "webp": "assets/img/wind-forecast.webp",
+      "alt": "wind-forecast"
     },
-    "text": "Lorem ipsum dolor sit amet.",
+    "text": "Work in progress. Om een goed beeld te krijgen van voorspelde wind kijk ik op 3 verschillende sites. Deze applicatie gebruikt <a href=\"https://github.com/jeroentvb/wind-scrape\" target=\"_blank\" rel=\"noreferrer\">wind-scrape</a> om windvoorspellingen op te halen en toont het in één overzicht.",
     "skills": [
       "JavaScript",
       "NodeJs"
     ],
     "link": {
-      "github": "https://github.com/jeroentvb/windsurf-stats",
-      "external": "https://google.nl"
-    }
-  },
-  {
-    "title": "test2",
-    "image": {
-      "default": "assets/img/wind-scrape-package.jpg",
-      "webp": "",
-      "alt": "Test2"
-    },
-    "text": "Lorem ipsum dolor sit amet. asjndajdsaskjdkasd",
-    "skills": [
-      "JavaScript",
-      "Git"
-    ],
-    "link": {
-      "github": "https://github.com/jeroentvb/windsurf-stats",
+      "github": "https://github.com/jeroentvb/windsurf-forecast",
       "external": ""
     }
   },
   {
-    "title": "test",
+    "title": "Wind-notifier",
     "image": {
-      "default": "assets/img/wind-scrape-package.jpg",
-      "webp": "",
-      "alt": "Test"
+      "default": "assets/img/wind-notifier.jpg",
+      "webp": "assets/img/wind-notifier.webp",
+      "alt": "wind notificatie screenshot"
     },
-    "text": "Lorem ipsum dolor sit amet.",
+    "text": "Een kleine nodejs applicatie die wind-voorspellingen voor vandaag en de komende twee dagen ophaalt en naar het IFTTT maker channel stuurt als de wind hoger is dan een ingesteld aantal knopen. Dit script kan als cron job worden gedraaid. Zo krijg ik elke ochtend de verwachte wind.",
     "skills": [
       "JavaScript",
       "NodeJs"
     ],
     "link": {
-      "github": "https://github.com/jeroentvb/windsurf-stats",
-      "external": "https://google.nl"
+      "github": "https://github.com/jeroentvb/wind-notifier",
+      "external": ""
     }
   },
   {
-    "title": "test",
+    "title": "A-Pollo",
     "image": {
-      "default": "assets/img/wind-scrape-package.jpg",
-      "webp": "",
-      "alt": "Test"
+      "default": "assets/img/a-pollo.jpg",
+      "webp": "assets/img/a-pollo.webp",
+      "alt": "a-pollo screenshot"
     },
-    "text": "Lorem ipsum dolor sit amet.",
+    "text": "Een progressive enhanced poll applicatie. Werkt volledig zonder JavaScript en nieuwe CSS features. Wanneer dat wel beschikbaar is worden er features toegevoegd. Voor het live updaten van de poll uitslagen wordt er bijvoorbeeld gebruik gemaakt van de WebSocket API als deze beschikbaar is.",
     "skills": [
-      "JavaScript",
-      "NodeJs"
+      "JS",
+      "NodeJs",
+      "WebSocket",
+      "SQL"
     ],
     "link": {
-      "github": "https://github.com/jeroentvb/windsurf-stats",
-      "external": "https://google.nl"
+      "github": "https://github.com/jeroentvb/a-pollo",
+      "external": ""
     }
   },
   {
-    "title": "test",
+    "title": "ModularHTML",
     "image": {
-      "default": "assets/img/wind-scrape-package.jpg",
-      "webp": "",
-      "alt": "Test"
+      "default": "assets/img/modularhtml.jpg",
+      "webp": "assets/img/modularhtml.webp",
+      "alt": "modularhtml code screenshot"
     },
-    "text": "Lorem ipsum dolor sit amet.",
+    "text": "Een project om te developen met EJS templates en later te compilen naar statische HTML. CSS kan modulair met SASS, JS met ES6 modules en HTML in statische vorm met niks. Dat vind ik onhandige bij het maken van een multi-page website dus heb ik dit project geschreven. Deze website is er mee ontwikkeld.",
     "skills": [
-      "JavaScript",
-      "NodeJs"
+      "JS",
+      "NodeJs",
+      "EJS"
     ],
     "link": {
-      "github": "https://github.com/jeroentvb/windsurf-stats",
-      "external": "https://google.nl"
+      "github": "https://github.com/jeroentvb/modularhtml",
+      "external": ""
     }
   }
 ]
