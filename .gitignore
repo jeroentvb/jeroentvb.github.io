@@ -1,4 +1,7 @@
+.DS_Store
 .sass-cache
-*.css.map
 *.psd
 node_modules/
+colors.txt
+design/
+dist
