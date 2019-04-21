@@ -28,10 +28,16 @@
   <div class="portrait-holder">
     <div class="portrait-container">
       <div class="overlay"></div>
-      <img
+      <!-- <img
       srcset="assets/img/jeroen.webp, assets/img/jeroen.jpg"
       src="assets/img/jeroen.jpg" alt="portret van Jeroen"
-      class="portrait">
+      class="portrait"> -->
+
+      <picture>
+        <source srcset="assets/img/jeroen.webp" type="image/webp" >
+        <source srcset="assets/img/jeroen.jpg" type="image/jpeg">
+        <img src="assets/img/jeroen.jpg" alt="portret van Jeroen" class="portrait">
+      </picture>
     </div>
   </div>
 
