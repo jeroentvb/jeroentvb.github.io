@@ -3,5 +3,5 @@
 *.psd
 node_modules/
 colors.txt
-design/
+.design
 dist
