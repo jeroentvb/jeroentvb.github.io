@@ -69,5 +69,22 @@
       "github": "https://github.com/jeroentvb/modularhtml",
       "external": ""
     }
+  },
+  {
+    "title": "Zoek een boek",
+    "image": {
+      "default": "assets/img/OBA-zoek-een-boek.jpg",
+      "webp": "assets/img/OBA-zoek-een-boek.webp",
+      "alt": "OBA zoek een boek"
+    },
+    "text": "Dit is een proof of concept voor de OBA. Het idee is dat je doormiddel van een kaart snel kunt zien waar een boek beschikbaar is en op welke afdeling, of wanneer het boek weer beschikbaar is.",
+    "skills": [
+      "JS",
+      "Leaflet"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/project-1-1819",
+      "external": "https://jeroenvanberkum.nl/project-1-1819/"
+    }
   }
 ]

@@ -335,7 +335,9 @@ header {
   #work {
     padding: 0 10vw; }
     #work p {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+    #work .monospace {
+      font-size: 1.125rem; } }
 @media (min-width: 75rem) {
   #work {
     padding: 0 20vw; } }
