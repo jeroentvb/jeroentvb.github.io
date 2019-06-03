@@ -1,8 +1,12 @@
 const app = require('express')
 const fs = require('fs')
 const work = require('../src/work.json')
+const chokidar = require('chokidar')
+const watcher = chokidar.watch('src', {
+  ignored: /(^|[/\\])\../
+})
 
-app()
+const server = app()
   .set('view engine', 'ejs')
   .set('views', 'src/pages')
   .use(app.static('src'))
@@ -13,10 +17,13 @@ app()
   .use(notFound)
   .listen(3000, () => console.log(`[Server] listening on port 3000...`))
 
+const io = require('socket.io')(server)
+
 function index (req, res) {
   res.render('index', {
     pagename: 'Home',
-    work: work
+    work: work,
+    liveReload: `<script src="/devDependencies/socket.io.js"></script><script src="/devDependencies/live-reload.js"></script>`
   })
 }
 
@@ -31,7 +38,8 @@ function render (req, res) {
 
   if (fs.existsSync(`src/pages/${id}.ejs`)) {
     res.render(id, {
-      pagename: id.charAt(0).toUpperCase() + id.substr(1)
+      pagename: id.charAt(0).toUpperCase() + id.substr(1),
+      liveReload: `<script src="/devDependencies/socket.io.js"></script><script src="/devDependencies/live-reload.js"></script>`
     })
   } else {
     notFound(req, res)
@@ -41,3 +49,9 @@ function render (req, res) {
 function notFound (req, res) {
   res.status(404).send('404 not found')
 }
+
+watcher
+  .on('add', path => io.emit('reload'))
+  .on('change', path => io.emit('reload'))
+  .on('unlink', path => io.emit('reload'))
+  .on('error', err => console.error('Error happened', err))

@@ -1,6 +1,6 @@
 {
-  "name": "modularhtml",
-  "version": "1.1.0",
+  "name": "portfolio",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,16 @@
     "start": "node scripts/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "jeroentvb",
   "license": "ISC",
   "dependencies": {
+    "chokidar": "^3.0.0",
     "cssnano": "^4.1.10",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "fs-extra": "^7.0.1",
     "postcss": "^7.0.14",
+    "socket.io": "^2.2.0",
     "terser": "^3.17.0"
   },
   "devDependencies": {
