@@ -20,7 +20,7 @@ header {
         &:not(:first-of-type) {
           margin-left: 1rem;
         }
-        &:last-of-type {
+        &:nth-last-of-type(2) {
           // border: 2px solid $color-text;
           // padding: 0.5rem 1rem;
 

@@ -1,9 +1,14 @@
 (() => {
   function toggleWork (e, work) {
+    const text = {
+      more: e.target.dataset.moreWork,
+      less: e.target.dataset.lessWork
+    }
+
     if (work[0].classList.contains('hidden')) {
-      e.target.textContent = 'Minder werk'
+      e.target.textContent = text.less
     } else {
-      e.target.textContent = 'Meer werk'
+      e.target.textContent = text.more
     }
 
     for (let i = 0; i < work.length; i++) {

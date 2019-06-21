@@ -1,6 +1,7 @@
 const app = require('express')
 const fs = require('fs')
 const work = require('../src/work.json')
+const translations = require('../src/translations.json')
 const chokidar = require('chokidar')
 const watcher = chokidar.watch('src', {
   ignored: /(^|[/\\])\../
@@ -23,6 +24,7 @@ function index (req, res) {
   res.render('index', {
     pagename: 'Home',
     work: work,
+    translations: translations,
     liveReload: `<script src="/devDependencies/socket.io.js"></script><script src="/devDependencies/live-reload.js"></script>`
   })
 }
@@ -39,6 +41,8 @@ function render (req, res) {
   if (fs.existsSync(`src/pages/${id}.ejs`)) {
     res.render(id, {
       pagename: id.charAt(0).toUpperCase() + id.substr(1),
+      work: work,
+      translations: translations,
       liveReload: `<script src="/devDependencies/socket.io.js"></script><script src="/devDependencies/live-reload.js"></script>`
     })
   } else {

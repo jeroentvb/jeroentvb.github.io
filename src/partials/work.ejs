@@ -1,5 +1,5 @@
 <section id="work">
-  <h2>Andere projecten</h2>
+  <h2><%= translations.work.page_title %></h2>
   <% work.forEach((item, i) => {
     if (i > 3) { %>
       <article class="item more-work hidden">
@@ -47,7 +47,7 @@
   <% })
 
   if (work.length > 4) { %>
-    <button class="load-more-button">Laad meer werk</button>
+    <button class="load-more-button" data-more-work="<%= translations.work.more_work %>" data-less-work="<%= translations.work.less_work %>"><%= translations.work.load_more %></button>
   <% } %>
 
 </section>
