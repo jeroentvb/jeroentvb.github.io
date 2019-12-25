@@ -1,5 +1,23 @@
 [
   {
+    "title": "Knmi fetch",
+    "image": {
+      "default": "assets/img/knmi-fetch.jpg",
+      "webp": "assets/img/knmi-fetch.webp",
+      "alt": "knmi-fetch"
+    },
+    "text": "Node module om data op te van knmi weerstations en te gebruiken in node.js. Er kan data worden opgehaald per dag of per uur.",
+    "skills": [
+      "TypeScript",
+      "NodeJs",
+      "Unit tests"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/node-knmi-fetch",
+      "external": "https://www.npmjs.com/package/node-knmi-fetch"
+    }
+  },
+  {
     "title": "Wind-forecast",
     "image": {
       "default": "assets/img/wind-forecast.jpg",

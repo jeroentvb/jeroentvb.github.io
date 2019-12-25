@@ -5,6 +5,7 @@ const Terser = require('terser')
 const postcss = require('postcss')
 const cssnano = require('cssnano')
 const work = require('../src/work.json')
+const translations = require('../src/translations.json')
 
 function createDistFolder () {
   if (!fs.existsSync('./dist')) {
@@ -43,7 +44,8 @@ function compileTemplates () {
         const html = template({
           pagename: name,
           work: work,
-          liveReload: ''
+          liveReload: '',
+          translations: translations
         })
 
         fs.writeFile(`./dist/${file.replace('.ejs', '')}.html`, html, err => {
