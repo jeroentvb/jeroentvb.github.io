@@ -1,0 +1,72 @@
+<template>
+<section>
+  <h2>Werk</h2>
+  <article class="featured-item featured-item--right">
+
+    <div class="featured-item__card">
+      <p class="featured-text">Uitgelicht</p>
+      <h3>Windsurf-stats</h3>
+      <div class="info-card info-card--right">
+        <p class="text">Een webapplicatie om makkelijk statistieken van windsurfsessies bij te houden en de informatie te visualiseren in grafieken.
+          Windsnelheden worden automatisch opgehaald en opgeslagen.</p>
+
+        <div class="used-skills">
+          <p class="monospace">JavaScript</p>
+          <p class="monospace">NodeJs</p>
+          <p class="monospace">SQL</p>
+          <a href="https://github.com/jeroentvb/windsurf-stats" target="_blank" rel="noreferrer">
+            <GithubLogo />
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jeroentvb/windsurf-stats" target="_blank" rel="noreferrer">
+      <picture>
+        <source srcset="img/wind-statistics-app.webp" type="image/webp" >
+        <source srcset="img/wind-statistics-app.jpg" type="image/jpeg">
+        <img src="img/wind-statistics-app.jpg" alt="windsurf statistics app screenshot" class="featured-image">
+      </picture>
+    </a>
+  </article>
+
+  <article class="featured-item featured-item--left">
+    <div class="featured-item__card">
+      <p class="featured-text">Uitgelicht</p>
+      <h3>Wind-scrape</h3>
+      <div class="info-card info-card--left">
+        <p class="text">Een pakketje, installeerbaar via npm, dat windvoorspellingen van een aantal grote wind sites kan scrapen. Omdat ik veel met windvoorspellingsdata in mijn persoonlijke projecten doe zit dit pakketje vaak als dependency in mijn projecten.</p>
+
+        <div class="used-skills">
+          <p class="monospace">JavaScript</p>
+          <p class="monospace">NodeJs</p>
+          <a href="https://github.com/jeroentvb/wind-scrape" target="_blank" rel="noreferrer">
+            <GithubLogo />
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jeroentvb/wind-scrape" target="_blank" rel="noreferrer">
+      <picture>
+        <source srcset="img/wind-scrape-package.webp" type="image/webp" >
+        <source srcset="img/wind-scrape-package.jpg" type="image/jpeg">
+        <img src="img/wind-scrape-package.jpg" alt="wind scrape code screenshot" class="featured-image">
+      </picture>
+    </a>
+  </article>
+</section>  
+</template>
+
+<script>
+import GithubLogo from '../../public/img/github-logo.svg'
+
+export default {
+  name: 'featuredWork',
+  components: {
+    GithubLogo
+  }
+}
+</script>
+
+<style scoped>
+
+</style>

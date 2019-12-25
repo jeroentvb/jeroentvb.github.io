@@ -1,8 +1,29 @@
-# Jeroen's Portfolio
-This is a repository for my portfolio website.
+# portfolio
 
-You can find it [here](http://jeroenvanberkum.nl)
+## Project setup
+```
+npm install
+```
 
-## Copyright
-This repo being open source has only one reason: for others to check the source code and get an idea of the way I write code.  
-This means that I do __not__ grant permission to anyone to (re)distribute, use or modify anything from this repo.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
