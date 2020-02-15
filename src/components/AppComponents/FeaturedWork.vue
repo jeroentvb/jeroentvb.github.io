@@ -12,10 +12,10 @@
           <div class="skills">
             <p v-for="skill in item.skills" :key="skill" class="monospace">{{ skill }}</p>
           </div>
-          <a :if="item.github" :href="item.github" target="_blank" rel="noreferrer">
+          <a v-if="item.github" :href="item.github" target="_blank" rel="noreferrer">
             <GithubLogo />
           </a>
-          <a :if="item.external" :href="item.external" target="_blank" rel="noreferrer">
+          <a v-if="item.external" :href="item.external" target="_blank" rel="noreferrer">
             <ExternalLinkSvg />
           </a>
         </div>
