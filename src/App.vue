@@ -2,24 +2,32 @@
   <div id="app">
     <Heading />
     <Intro />
-    <!-- <FeaturedWork /> -->
+    <FeaturedWork :work="this.work" />
     <Work />
   </div>
 </template>
 
 <script>
 import Heading from './components/Heading.vue'
-import Intro from './components/Intro.vue'
-// import FeaturedWork from './components/FeaturedWork.vue'
-import Work from './components/Work.vue'
+import Intro from './components/AppComponents/Intro.vue'
+import FeaturedWork from './components/AppComponents/FeaturedWork.vue'
+import Work from './components/AppComponents/Work.vue'
+
+import work from './content/featuredWork.json'
 
 export default {
   name: 'app',
   components: {
     Heading,
     Intro,
-    // FeaturedWork,
+    FeaturedWork,
     Work
+  },
+
+  data() {
+    return {
+      work
+    }
   }
 }
 </script>
@@ -66,5 +74,9 @@ p {
   margin: 1rem 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  width: 2.5rem;
 }
 </style>

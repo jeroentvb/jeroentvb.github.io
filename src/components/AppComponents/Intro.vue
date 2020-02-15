@@ -7,33 +7,24 @@
     </div>
     <div class="content">
       <p>Ik studeer Communication & Multimedia design aan de HvA. Hierbij focus ik me op front-end development. Ik bouw (en design) websites en andere digitale producten.</p>
-      <div class="contact-platforms">
-        <a href="https://github.com/jeroentvb" target="_blank" rel="noreferrer">
-          <GithubLogo />
-        </a>
-        <a href="https://www.linkedin.com/in/jeroenvanberkum/" target="_blank" rel="noreferrer">
-          <LinkedinLogo />
-        </a>
-      </div>
+      <ContactPlatforms />
     </div>
   </section>
 </template>
 
 <script>
-import GithubLogo from '../../public/img/github-logo.svg'
-import LinkedinLogo from '../../public/img/linkedin-logo.svg'
+import ContactPlatforms from '../ContactPlatforms'
 
 export default {
   name: 'intro',
   components: {
-    GithubLogo,
-    LinkedinLogo
+    ContactPlatforms
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/variables';
+@import '../../assets/css/variables';
 
 section {
   margin-top: -3rem;
@@ -51,9 +42,5 @@ section {
 
 .subtitle {
   color: $color-grey;
-}
-
-.icon {
-  width: 2.5rem;
 }
 </style>

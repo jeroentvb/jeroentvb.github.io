@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Windsurf-stats",
+    "description": "Een webapplicatie om makkelijk statistieken van windsurfsessies bij te houden en de informatie te visualiseren in grafieken. Windsnelheden worden automatisch opgehaald en opgeslagen.",
+    "skills": [
+      "JavaScript",
+      "NodeJs",
+      "SQL"
+    ],
+    "github": "https://github.com/jeroentvb/windsurf-stats",
+    "external": "test",
+    "image": {
+      "webp": "img/wind-statistics-app.webp",
+      "img": "img/wind-statistics-app.jpg",
+      "alt": "windsurf statistics app screenshot",
+      "link": "https://github.com/jeroentvb/windsurf-stats"
+    }
+  },
+  {
+    "title": "Wind-scrape",
+    "description": "Een pakketje, installeerbaar via npm, dat windvoorspellingen van een aantal grote wind sites kan scrapen. Omdat ik veel met windvoorspellingsdata in mijn persoonlijke projecten doe zit dit pakketje vaak als dependency in mijn projecten.",
+    "skills": [
+      "TypeScript",
+      "NodeJs",
+      "Unit tests"
+    ],
+    "github": "https://github.com/jeroentvb/wind-scrape",
+    "external": "",
+    "image": {
+      "webp": "img/wind-scrape-package.webp",
+      "img": "img/wind-scrape-package.jpg",
+      "alt": "wind scrape code screenshot",
+      "link": "https://github.com/jeroentvb/wind-scrape"
+    }
+  }
+]
