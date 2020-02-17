@@ -2,8 +2,8 @@
   <div id="app">
     <Heading />
     <Intro />
-    <FeaturedWork :work="this.work" />
-    <Work />
+    <FeaturedWork :work="this.featuredWorkData" />
+    <Work :work="this.workData" />
   </div>
 </template>
 
@@ -13,7 +13,8 @@ import Intro from './components/AppComponents/Intro.vue'
 import FeaturedWork from './components/AppComponents/FeaturedWork.vue'
 import Work from './components/AppComponents/Work.vue'
 
-import work from './content/featuredWork.json'
+import featuredWorkData from './content/featuredWork.json'
+import workData from './content/work.json'
 
 export default {
   name: 'app',
@@ -26,7 +27,8 @@ export default {
 
   data() {
     return {
-      work
+      featuredWorkData,
+      workData
     }
   }
 }

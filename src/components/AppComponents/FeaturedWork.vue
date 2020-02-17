@@ -8,17 +8,7 @@
       <div class="info-card info-card--right">
         <p class="text">{{ item.description }}</p>
 
-        <div>
-          <div class="skills">
-            <p v-for="skill in item.skills" :key="skill" class="monospace">{{ skill }}</p>
-          </div>
-          <a v-if="item.github" :href="item.github" target="_blank" rel="noreferrer">
-            <GithubLogo />
-          </a>
-          <a v-if="item.external" :href="item.external" target="_blank" rel="noreferrer">
-            <ExternalLinkSvg />
-          </a>
-        </div>
+        <ProjectMetaData :skills="item.skills" :githubLink="item.github" :externalLink="item.external" />
       </div>
     </div>
     <a :href="item.image.link" target="_blank" rel="noreferrer">
@@ -34,15 +24,13 @@
 
 <script>
 import ImageComponent from '../ImageComponent'
-import GithubLogo from '../../../public/img/github-logo.svg'
-import ExternalLinkSvg from '../../../public/img/external-link.svg'
+import ProjectMetaData from '../ProjectMetaData'
 
 export default {
   name: 'featuredWork',
   components: {
-    GithubLogo,
     ImageComponent,
-    ExternalLinkSvg
+    ProjectMetaData
   },
   props: {
     work: Array

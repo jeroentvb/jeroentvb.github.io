@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Knmi fetch",
+    "description": "Node module om data op te van knmi weerstations en te gebruiken in node.js. Er kan data worden opgehaald per dag of per uur.",
+    "skills": [
+      "TypeScript",
+      "NodeJs",
+      "Unit tests"
+    ],
+    "github": "https://github.com/jeroentvb/knmi-fetch",
+    "external": "https://www.npmjs.com/package/node-knmi-fetch",
+    "image": {
+      "webp": "img/knmi-fetch.webp",
+      "img": "img/knmi-fetch.jpg",
+      "alt": "windsurf statistics app screenshot",
+      "link": "https://github.com/jeroentvb/knmi-fetch"
+    }
+  }
+]
