@@ -5,15 +5,17 @@
     <FeaturedWork :work="this.featuredWorkData" />
     <Work :work="this.workData" />
     <About />
+    <Contact />
   </div>
 </template>
 
 <script>
-import Heading from './components/Heading.vue'
-import Intro from './components/AppComponents/Intro.vue'
-import FeaturedWork from './components/AppComponents/FeaturedWork.vue'
-import Work from './components/AppComponents/Work.vue'
-import About from './components/AppComponents/About.vue'
+import Heading from './components/Heading'
+import Intro from './components/AppComponents/Intro'
+import FeaturedWork from './components/AppComponents/FeaturedWork'
+import Work from './components/AppComponents/Work'
+import About from './components/AppComponents/About'
+import Contact from './components/AppComponents/Contact'
 
 import featuredWorkData from './content/featuredWork.json'
 import workData from './content/work.json'
@@ -25,7 +27,8 @@ export default {
     Intro,
     FeaturedWork,
     Work,
-    About
+    About,
+    Contact
   },
 
   data() {
