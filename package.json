@@ -2,12 +2,12 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "node scripts/build.js",
-    "newpage": "node scripts/newpage.js",
-    "start": "node scripts/index.js",
-    "dev": "nodemon scripts/"
+    "create-config": "modularize-html create-config",
+    "dev": "modularize-html serve",
+    "new-page": "modularize-html new-page",
+    "build": "modularize-html build"
   },
   "keywords": [],
   "author": "jeroentvb",
@@ -18,13 +18,12 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "fs-extra": "^9.0.1",
+    "modularize-html": "^3.1.1",
     "postcss": "^8.2.4",
     "socket.io": "^3.1.0",
     "terser": "^5.5.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
+  "devDependencies": {},
   "nodemonConfig": {
     "ignore": [
       "src/*",
