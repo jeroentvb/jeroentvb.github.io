@@ -34,7 +34,7 @@
   {
     "title": "IFTTT webhooks channel",
     "image": {
-      "url": "ifttt-webhooks-channel"
+      "url": "IFTTT-webhooks-channel"
     },
     "text": "npm package met het doel om het versturen van een post request naar het IFTTT webhooks channel makkelijker te maken. Heeft maar 1 dependency.",
     "skills": [
