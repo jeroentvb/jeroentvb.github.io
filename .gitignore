@@ -1,7 +1,0 @@
-.DS_Store
-.sass-cache
-*.psd
-node_modules/
-colors.txt
-.design
-dist
