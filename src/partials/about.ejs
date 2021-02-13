@@ -9,35 +9,35 @@
   <div class="skills">
     <h3>Skills</h3>
     <div class="skill-list">
-      <ul>
+      <ul class="left">
         <li>JavaScript</li>
-        <li>HTML/CSS</li>
-        <li>NodeJs</li>
-        <li>Git</li>
+        <ul>
+          <li>TypeScript</li>
+          <li>NodeJs</li>
+          <li>Unit testing</li>
+        </ul>
+        <li>Frameworks</li>
+        <ul>
+          <li>Angular</li>
+          <li>Vue</li>
+        </ul>
       </ul>
 
       <ul>
+        <li>HTML/CSS</li>
+        <ul>
+          <li>Sass</li>
+        </ul>
+        <li>Git</li>
         <li>Photoshop</li>
         <li>Sketch</li>
-        <li>Premiere Pro</li>
-        <li>InDesign</li>
       </ul>
     </div>
   </div>
 
   <div class="portrait-holder">
     <div class="portrait-container">
-      <div class="overlay"></div>
-      <!-- <img
-      srcset="assets/img/jeroen.webp, assets/img/jeroen.jpg"
-      src="assets/img/jeroen.jpg" alt="portret van Jeroen"
-      class="portrait"> -->
-
-      <picture>
-        <source srcset="assets/img/jeroen.webp" type="image/webp" >
-        <source srcset="assets/img/jeroen.jpg" type="image/jpeg">
-        <img src="assets/img/jeroen.jpg" alt="portret van Jeroen" class="portrait">
-      </picture>
+      <%- include('../partials/components/image-jpg', { name: 'jeroen', alt: 'jeroen op een windsurfplank', className: 'portrait' }) %>
     </div>
   </div>
 

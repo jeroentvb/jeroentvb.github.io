@@ -26,6 +26,10 @@ body {
   box-sizing: border-box;
 }
 
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover {
+  cursor: default;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", system-ui, sans-serif;
   font-display: swap;
@@ -140,12 +144,12 @@ header nav ul li:first-of-type a:hover {
 header nav ul li:not(:first-of-type) {
   margin-left: 1rem;
 }
-header nav ul li:nth-last-of-type(2) a {
+header nav ul li:nth-last-of-type(1) a {
   padding: 0.5rem 1rem;
   transition: 0.2s;
   background-color: #00376F;
 }
-header nav ul li:nth-last-of-type(2) a:hover {
+header nav ul li:nth-last-of-type(1) a:hover {
   border-bottom: none;
   background-color: #43A5FF;
 }
@@ -183,6 +187,10 @@ header nav ul li a:hover {
 
 .subtitle {
   color: #9B9B9B;
+  transition: 0.3s;
+}
+.subtitle:hover {
+  opacity: 0.5;
 }
 
 .content p {
@@ -415,6 +423,7 @@ header nav ul li a:hover {
 .load-more-button:hover, .load-more-button:focus {
   box-shadow: 10px 10px #43A5FF;
   cursor: pointer;
+  outline: none;
 }
 
 @media (min-width: 43.75rem) {
@@ -467,7 +476,6 @@ header nav ul li a:hover {
 .skill-list {
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-bottom: 2rem;
 }
 .skill-list ul {
@@ -476,7 +484,7 @@ header nav ul li a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.skill-list ul:first-of-type {
+.skill-list ul.left {
   margin-right: 25%;
 }
 .skill-list ul li {
@@ -486,6 +494,9 @@ header nav ul li a:hover {
 .skill-list ul li:before {
   content: "- ";
   color: #43A5FF;
+}
+.skill-list ul ul {
+  margin-left: 1em;
 }
 
 .portrait-container {

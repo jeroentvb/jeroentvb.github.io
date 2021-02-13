@@ -2,9 +2,7 @@
   {
     "title": "Knmi fetch",
     "image": {
-      "default": "assets/img/knmi-fetch.jpg",
-      "webp": "assets/img/knmi-fetch.webp",
-      "alt": "knmi-fetch"
+      "url": "knmi-fetch"
     },
     "text": "Node module om data op te van knmi weerstations en te gebruiken in node.js. Er kan data worden opgehaald per dag of per uur.",
     "skills": [
@@ -18,28 +16,40 @@
     }
   },
   {
-    "title": "Wind-forecast",
+    "title": "Modularize html",
     "image": {
-      "default": "assets/img/wind-forecast.jpg",
-      "webp": "assets/img/wind-forecast.webp",
-      "alt": "wind-forecast"
+      "url": "modularize-html"
     },
-    "text": "Work in progress. Om een goed beeld te krijgen van voorspelde wind kijk ik op 3 verschillende sites. Deze applicatie gebruikt <a href=\"https://github.com/jeroentvb/wind-scrape\" target=\"_blank\" rel=\"noreferrer\">wind-scrape</a> om windvoorspellingen op te halen en toont het in één overzicht.",
+    "text": "Een CLI package om te developen met EJS templates en later te compilen naar statische HTML. Deze website is er mee ontwikkeld.",
     "skills": [
-      "JavaScript",
-      "NodeJs"
+      "JS",
+      "NodeJs",
+      "EJS"
     ],
     "link": {
-      "github": "https://github.com/jeroentvb/windsurf-forecast",
-      "external": ""
+      "github": "https://github.com/jeroentvb/modularhtml",
+      "external": "https://www.npmjs.com/package/modularize-html"
     }
   },
   {
-    "title": "Wind-notifier",
+    "title": "IFTTT webhooks channel",
     "image": {
-      "default": "assets/img/wind-notifier.jpg",
-      "webp": "assets/img/wind-notifier.webp",
-      "alt": "wind notificatie screenshot"
+      "url": "ifttt-webhooks-channel"
+    },
+    "text": "npm package met het doel om het versturen van een post request naar het IFTTT webhooks channel makkelijker te maken. Heeft maar 1 dependency.",
+    "skills": [
+      "NodeJs",
+      "Jest"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/IFTTT-webhooks-channel",
+      "external": "https://www.npmjs.com/package/ifttt-webhooks-channel"
+    }
+  },
+  {
+    "title": "Wind notifier",
+    "image": {
+      "url": "wind-notifier"
     },
     "text": "Een kleine nodejs applicatie die wind-voorspellingen voor vandaag en de komende twee dagen ophaalt en naar het IFTTT maker channel stuurt als de wind hoger is dan een ingesteld aantal knopen. Dit script kan als cron job worden gedraaid. Zo krijg ik elke ochtend de verwachte wind.",
     "skills": [
@@ -54,9 +64,7 @@
   {
     "title": "A-Pollo",
     "image": {
-      "default": "assets/img/a-pollo.jpg",
-      "webp": "assets/img/a-pollo.webp",
-      "alt": "a-pollo screenshot"
+      "url": "a-pollo"
     },
     "text": "Een progressive enhanced poll applicatie. Werkt volledig zonder JavaScript en nieuwe CSS features. Wanneer dat wel beschikbaar is worden er features toegevoegd. Voor het live updaten van de poll uitslagen wordt er bijvoorbeeld gebruik gemaakt van de WebSocket API als deze beschikbaar is.",
     "skills": [
@@ -68,41 +76,6 @@
     "link": {
       "github": "https://github.com/jeroentvb/a-pollo",
       "external": ""
-    }
-  },
-  {
-    "title": "ModularHTML",
-    "image": {
-      "default": "assets/img/modularhtml.jpg",
-      "webp": "assets/img/modularhtml.webp",
-      "alt": "modularhtml code screenshot"
-    },
-    "text": "Een project om te developen met EJS templates en later te compilen naar statische HTML. CSS kan modulair met SASS, JS met ES6 modules en HTML in statische vorm met niks. Dat vind ik onhandige bij het maken van een multi-page website dus heb ik dit project geschreven. Deze website is er mee ontwikkeld.",
-    "skills": [
-      "JS",
-      "NodeJs",
-      "EJS"
-    ],
-    "link": {
-      "github": "https://github.com/jeroentvb/modularhtml",
-      "external": ""
-    }
-  },
-  {
-    "title": "Zoek een boek",
-    "image": {
-      "default": "assets/img/OBA-zoek-een-boek.jpg",
-      "webp": "assets/img/OBA-zoek-een-boek.webp",
-      "alt": "OBA zoek een boek"
-    },
-    "text": "Dit is een proof of concept voor de OBA. Het idee is dat je doormiddel van een kaart snel kunt zien waar een boek beschikbaar is en op welke afdeling, of wanneer het boek weer beschikbaar is.",
-    "skills": [
-      "JS",
-      "Leaflet"
-    ],
-    "link": {
-      "github": "https://github.com/jeroentvb/project-1-1819",
-      "external": "https://jeroenvanberkum.nl/project-1-1819/"
     }
   }
 ]
