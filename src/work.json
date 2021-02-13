@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Knmi fetch",
+    "image": {
+      "url": "knmi-fetch"
+    },
+    "text": "Node module om data op te van knmi weerstations en te gebruiken in node.js. Er kan data worden opgehaald per dag of per uur.",
+    "skills": [
+      "TypeScript",
+      "NodeJs",
+      "Unit tests"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/node-knmi-fetch",
+      "external": "https://www.npmjs.com/package/node-knmi-fetch"
+    }
+  },
+  {
+    "title": "Modularize html",
+    "image": {
+      "url": "modularize-html"
+    },
+    "text": "Een CLI package om te developen met EJS templates en later te compilen naar statische HTML. Deze website is er mee ontwikkeld.",
+    "skills": [
+      "JS",
+      "NodeJs",
+      "EJS"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/modularhtml",
+      "external": "https://www.npmjs.com/package/modularize-html"
+    }
+  },
+  {
+    "title": "IFTTT webhooks channel",
+    "image": {
+      "url": "ifttt-webhooks-channel"
+    },
+    "text": "npm package met het doel om het versturen van een post request naar het IFTTT webhooks channel makkelijker te maken. Heeft maar 1 dependency.",
+    "skills": [
+      "NodeJs",
+      "Jest"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/IFTTT-webhooks-channel",
+      "external": "https://www.npmjs.com/package/ifttt-webhooks-channel"
+    }
+  },
+  {
+    "title": "Wind notifier",
+    "image": {
+      "url": "wind-notifier"
+    },
+    "text": "Een kleine nodejs applicatie die wind-voorspellingen voor vandaag en de komende twee dagen ophaalt en naar het IFTTT maker channel stuurt als de wind hoger is dan een ingesteld aantal knopen. Dit script kan als cron job worden gedraaid. Zo krijg ik elke ochtend de verwachte wind.",
+    "skills": [
+      "JavaScript",
+      "NodeJs"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/wind-notifier",
+      "external": ""
+    }
+  },
+  {
+    "title": "A-Pollo",
+    "image": {
+      "url": "a-pollo"
+    },
+    "text": "Een progressive enhanced poll applicatie. Werkt volledig zonder JavaScript en nieuwe CSS features. Wanneer dat wel beschikbaar is worden er features toegevoegd. Voor het live updaten van de poll uitslagen wordt er bijvoorbeeld gebruik gemaakt van de WebSocket API als deze beschikbaar is.",
+    "skills": [
+      "JS",
+      "NodeJs",
+      "WebSocket",
+      "SQL"
+    ],
+    "link": {
+      "github": "https://github.com/jeroentvb/a-pollo",
+      "external": ""
+    }
+  }
+]

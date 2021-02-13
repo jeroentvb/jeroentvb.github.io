@@ -1,0 +1,45 @@
+<section id="featured-work">
+  <h2><%= translations.featured_work.page_title %></h2>
+  <article class="featured-item featured-item--right">
+
+    <div class="featured-item__card">
+      <p class="featured-text">Uitgelicht</p>
+      <h3>Windsurf-stats</h3>
+      <div class="info-card info-card--right">
+        <p class="text">Een webapplicatie om makkelijk statistieken van windsurfsessies bij te houden en de informatie te visualiseren in grafieken.
+          Windsnelheden worden automatisch opgehaald en opgeslagen.</p>
+
+        <div class="used-skills">
+          <p class="monospace">Vue</p>
+          <p class="monospace">TypeScript</p>
+          <p class="monospace">NodeJs</p>
+          <p class="monospace">MongoDb</p>
+          <%- include('../partials/components/github-logo', { link: 'https://github.com/jeroentvb/windsurf-stats' }) %>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jeroentvb/windsurf-stats" target="_blank" rel="noreferrer">
+      <%- include('../partials/components/image-jpg', { name: 'wind-statistics-app', alt: 'windsurf statistics app screenshot', className: 'featured-image' }) %>
+    </a>
+  </article>
+
+  <article class="featured-item featured-item--left">
+    <div class="featured-item__card">
+      <p class="featured-text">Uitgelicht</p>
+      <h3>Wind-scrape</h3>
+      <div class="info-card info-card--left">
+        <p class="text">Een pakketje, installeerbaar via npm, dat windvoorspellingen van een aantal grote wind sites kan scrapen. Omdat ik veel met windvoorspellingsdata in mijn persoonlijke projecten doe zit dit pakketje vaak als dependency in mijn projecten.</p>
+
+        <div class="used-skills">
+          <p class="monospace">TypeScript</p>
+          <p class="monospace">NodeJs</p>
+          <p class="monospace">Jest</p>
+          <%- include('../partials/components/github-logo', { link: 'https://github.com/jeroentvb/wind-scrape' }) %>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/jeroentvb/wind-scrape" target="_blank" rel="noreferrer">
+      <%- include('../partials/components/image-jpg', { name: 'wind-scrape-package', alt: 'wind scrape code screenshot', className: 'featured-image' }) %>
+    </a>
+  </article>
+</section>

@@ -1,0 +1,9 @@
+<picture>
+  <source srcset="assets/img/<%= name %>.webp" type="image/webp">
+  <source srcset="assets/img/<%= name %>.jpg" type="image/jpeg">
+  <img
+    src="assets/img/<%= name %>.jpg"
+    alt="<%= typeof alt === 'undefined' ? name : alt %>"
+    class="<%= typeof className !== 'undefined' ? className : '' %>"
+  >
+</picture>

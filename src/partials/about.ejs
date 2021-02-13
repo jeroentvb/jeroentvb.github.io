@@ -1,0 +1,44 @@
+<section id="about">
+  <h2><%= translations.about.page_title %></h2>
+  <div class="text">
+    <p><%= translations.about.text.p1 %></p>
+    <p><%= translations.about.text.p2 %></p>
+    <p><%= translations.about.text.p3 %> <a href="https://github.com/jeroentvb" target="_blank" rel="noreferrer"><%= translations.about.text.p4 %></a>.</p>
+  </div>
+
+  <div class="skills">
+    <h3>Skills</h3>
+    <div class="skill-list">
+      <ul class="left">
+        <li>JavaScript</li>
+        <ul>
+          <li>TypeScript</li>
+          <li>NodeJs</li>
+          <li>Unit testing</li>
+        </ul>
+        <li>Frameworks</li>
+        <ul>
+          <li>Angular</li>
+          <li>Vue</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>HTML/CSS</li>
+        <ul>
+          <li>Sass</li>
+        </ul>
+        <li>Git</li>
+        <li>Photoshop</li>
+        <li>Sketch</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portrait-holder">
+    <div class="portrait-container">
+      <%- include('../partials/components/image-jpg', { name: 'jeroen', alt: 'jeroen op een windsurfplank', className: 'portrait' }) %>
+    </div>
+  </div>
+
+</section>
