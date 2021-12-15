@@ -2,6 +2,10 @@
   margin-bottom: 2rem;
 }
 
+.skills {
+  grid-column: 1 / 3;
+}
+
 .skill-list {
   display: flex;
   flex-direction: row;
@@ -13,13 +17,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    &.left {
-      margin-right: 25%;
+    &.col {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 0;
+      flex-grow: 1;
     }
 
     li {
-      font-family: monospace;
-      font-size: 1.125em;
+      font-family: 'Fira Code', 'Open Sans';
+      font-size: 1rem;
 
       &:before {
         content: '- ';
@@ -61,6 +68,7 @@
   width: 100%;
   box-shadow: 10px 10px $color-secondary;
   transition: 0.2s;
+  border-radius: $border-radius-standard;
 }
 
 @media (min-width: $breakpoint-small) {
@@ -105,6 +113,10 @@
 @media (min-width: $breakpoint-medium) {
   #about {
     padding: $breakpoint-medium-padding;
+  }
+
+  .skills {
+    grid-column: 1 / 2;
   }
 }
 

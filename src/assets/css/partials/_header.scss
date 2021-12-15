@@ -28,6 +28,7 @@ header {
             padding: 0.5rem 1rem;
             transition: 0.2s;
             background-color: $color-primary;
+            border-radius: $border-radius-standard;
             &:hover {
               border-bottom: none;
               background-color: $color-secondary;
