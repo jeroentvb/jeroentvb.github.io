@@ -1,4 +1,7 @@
 (() => {
+  /**
+   * Show more or less work items
+   */
   function toggleWork (e, work) {
     const text = {
       more: e.target.dataset.moreWork,
@@ -23,19 +26,22 @@
     button.addEventListener('click', e => toggleWork(e, moreWork))
   }
 
+  /**
+   * Scroll to section on click of nav item
+   */
   if (document.documentElement.scrollIntoView) {
-    const nav = document.getElementsByClassName('menu-item')
+    const navItems = document.getElementsByClassName('menu-item')
 
-    for (let i = 0; i < nav.length; i++) {
-      nav[i].addEventListener('click', e => {
+    Array.from(navItems).forEach(navItem => {
+      navItem.addEventListener('click', e => {
         e.preventDefault()
 
-        const el = document.getElementById(nav[i].href.split('#')[1])
+        const el = document.getElementById(navItem.href.split('#')[1])
 
         el.scrollIntoView({
           behavior: 'smooth'
         })
       })
-    }
+    })
   }
 })()
