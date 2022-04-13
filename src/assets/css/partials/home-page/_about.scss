@@ -30,7 +30,7 @@
 
       &:before {
         content: '- ';
-        color: $color-secondary;
+        color: var(--color-secondary);
       }
     }
 
@@ -51,7 +51,7 @@
   }
 
   &:hover .portrait {
-    box-shadow: 15px 15px $color-secondary;
+    box-shadow: 15px 15px var(--color-secondary);
   }
 }
 
@@ -59,14 +59,14 @@
   position: absolute;
   width: 100%;
   height: calc(100% - 5px);
-  background-color: $color-primary;
+  background-color: var(--color-primary);
   opacity: 0.3;
   transition: 0.2s;
 }
 
 .portrait {
   width: 100%;
-  box-shadow: 10px 10px $color-secondary;
+  box-shadow: 10px 10px var(--color-secondary);
   transition: 0.2s;
   border-radius: $border-radius-standard;
 }

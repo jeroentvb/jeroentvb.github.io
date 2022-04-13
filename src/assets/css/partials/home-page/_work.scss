@@ -10,18 +10,18 @@
   position: relative;
 
   &:hover .info-card--right {
-    box-shadow: 15px 15px $color-secondary;
+    box-shadow: 15px 15px var(--color-secondary);
   }
 
   &:hover .info-card--left {
-    box-shadow: -15px 15px $color-secondary;
+    box-shadow: -15px 15px var(--color-secondary);
   }
 }
 
 .featured-text {
   font-family: monospace;
   font-size: 1.125rem;
-  color: $color-secondary;
+  color: var(--color-secondary);
   margin: 0.5rem 0;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .info-card {
-  background-color: $color-primary;
+  background-color: var(--color-primary);
   padding: 1.5rem;
   width: 96%;
   transition: 0.2s;
@@ -41,12 +41,12 @@
   }
 
   &--left {
-    box-shadow: -10px 10px $color-secondary;
+    box-shadow: -10px 10px var(--color-secondary);
     margin-left: 10px;
   }
 
   &--right {
-    box-shadow: 10px 10px $color-secondary;
+    box-shadow: 10px 10px var(--color-secondary);
   }
 }
 
@@ -175,7 +175,7 @@
 }
 
 .item {
-  background-color: $color-primary;
+  background-color: var(--color-primary);
   margin-bottom: 2rem;
   transition: 0.2s;
   border-radius: $border-radius-standard;
@@ -193,7 +193,7 @@
       height: calc(100% - 5px);
       display: block;
       position: absolute;
-      background: $background;
+      background: var(--background);
       opacity: 0.3;
       transition: 0.3s;
     }
@@ -209,7 +209,7 @@
   }
 
   &:hover {
-    box-shadow: 10px 10px $color-secondary;
+    box-shadow: 10px 10px var(--color-secondary);
     cursor: default;
 
     .item__header:after {
@@ -223,14 +223,14 @@
   -webkit-appearance: none;
   padding: 1.5rem;
   font-size: 1.125rem;
-  background-color: $color-primary;
-  color: $color-text;
+  background-color: var(--color-primary);
+  color: var(--color-text);
   border: none;
   transition: 0.2s;
   border-radius: $border-radius-standard;
 
   &:hover, &:focus {
-    box-shadow: 10px 10px $color-secondary;
+    box-shadow: 10px 10px var(--color-secondary);
     cursor: pointer;
     outline: none;
   }

@@ -21,26 +21,26 @@ header {
           margin-left: 1rem;
         }
         &:nth-last-of-type(1) {
-          // border: 2px solid $color-text;
+          // border: 2px solid var(--color-text);
           // padding: 0.5rem 1rem;
 
           a {
             padding: 0.5rem 1rem;
             transition: 0.2s;
-            background-color: $color-primary;
+            background-color: var(--color-primary);
             border-radius: $border-radius-standard;
             &:hover {
               border-bottom: none;
-              background-color: $color-secondary;
+              background-color: var(--color-secondary);
             }
           }
         }
         a {
-          color: $color-text;
+          color: var(--color-text);
           text-decoration: none;
           transition: 0.2s;
           &:hover {
-            border-bottom: 2px solid $color-text;
+            border-bottom: 2px solid var(--color-text);
           }
         }
       }

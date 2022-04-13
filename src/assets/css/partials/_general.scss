@@ -1,6 +1,6 @@
 body {
-  background-color: $background;
-  color: $color-text;
+  background-color: var(--background);
+  color: var(--color-text);
   margin: 0;
   padding: 1rem;
   font-size: 1.125rem;
@@ -67,10 +67,10 @@ p {
   }
   &:hover {
     g g path {
-      fill: $color-secondary;
+      fill: var(--color-secondary);
     }
     path {
-      fill: $color-secondary;
+      fill: var(--color-secondary);
     }
   }
 }
@@ -85,18 +85,18 @@ p {
 }
 
 p a {
-  color: #fff;
+  color: var(--color-text);
   text-decoration: none;
   transition: 0.2s;
-  border-bottom: 2px solid $color-secondary;
+  border-bottom: 2px solid var(--color-secondary);
 
   &:hover {
-    color: $color-secondary;
+    color: var(--color-secondary);
   }
 }
 
 .button {
-  background-color: $color-primary;
+  background-color: var(--color-primary);
   padding: 1rem;
   border-bottom: none;
   transition: 0.2s;
@@ -107,7 +107,7 @@ p a {
   display: block;
 
   &:hover {
-    background-color: $color-secondary;
+    background-color: var(--color-secondary);
     color: #fff;
   }
 }

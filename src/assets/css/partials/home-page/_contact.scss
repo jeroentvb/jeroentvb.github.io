@@ -20,13 +20,13 @@
       flex-direction: row;
       align-items: center;
       .link {
-        color: #fff;
+        color: var(--color-text);
         text-decoration: none;
         transition: 0.2s;
-        border-bottom: 2px solid $color-secondary;
+        border-bottom: 2px solid var(--color-secondary);
 
         &:hover {
-          color: $color-secondary;
+          color: var(--color-secondary);
         }
       }
 

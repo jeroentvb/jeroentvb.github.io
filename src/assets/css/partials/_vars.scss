@@ -1,7 +1,25 @@
-$background: #00162C;
-$color-primary: #00376F;
-$color-secondary: #43A5FF;
-$color-text: #ffffff;
+// :root {
+//    --background: #ffffff;
+//    --color-primary: #43A5FF;
+//    --color-secondary: #00376F;
+//    --color-text: #00162C;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//    :root {
+//       --background: #00162C;
+//       --color-primary: #00376F;
+//       --color-secondary: #43A5FF;
+//       --color-text: #ffffff;
+//    }
+// }
+
+:root {
+   --background: #00162C;
+   --color-primary: #00376F;
+   --color-secondary: #43A5FF;
+   --color-text: #ffffff;
+}
 
 $breakpoint-small: 43.750rem; // 767px
 $breakpoint-small-grid: 1fr 1fr;
