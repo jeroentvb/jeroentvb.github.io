@@ -469,9 +469,6 @@ header nav ul li a:hover {
   #work p {
     font-size: 1rem;
   }
-  #work .monospace {
-    font-size: 1.125rem;
-  }
 }
 @media (min-width: 75rem) {
   #work {
